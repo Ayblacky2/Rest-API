@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
 const { newUser, User } = require('../Models/User');
-const app = express
+const app = express()
 
     // checking the server
-    router.get('/',  (req, res) => {
+    router.get('/user',  (req, res) => {
     res.send("Hello Api")
     })
         
